@@ -1,25 +1,26 @@
 
 
+
 function Movie(props){
     const {
-            Title,
-            Year,
-            imdbID: id,
-            Type,
-            Poster
-            }  = props;
+           Title: title, 
+           Year: year,
+           imbID: Id,
+           Type: type,
+           Poster: poster
+        } = props;
 
-            return(
-              <div className="card movie" id={id}>
-                <div classNameName="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={Poster}/>
-                </div>
-                <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4">{Title}</span>
-                  <p>{Year} <span className="right">{Type}</span></p>
-                </div>
-              </div>
-            )
+    return(
+        <div className="card movie" id={Id}>
+    <div className="card-image waves-effect waves-block waves-light">
+      <img className="activator" src={poster} />
+    </div>
+    <div className="card-content">
+      <span className="card-title activator grey-text text-darken-4">{title}</span>
+      <p>{year} <span className="right">{type}</span></p>
+    </div>
+  </div>
+    )    
 }
 
 export default Movie;
