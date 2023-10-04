@@ -4,10 +4,10 @@ import Movie from "./Movie";
 function Movies(props){
     const {movies} = props;
 
-    return <div className="movies">
-        {movies.map(movie => (<Movie key={movie.id} {...movie} />)
+    return(<div className="movies">
+        {movies.map(movie => <Movie key={movie.Id} {...movie} />
         )}
-    </div>
+    </div>)
 }
 
 export default Movies;
